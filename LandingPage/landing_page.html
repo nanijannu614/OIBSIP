@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StreamFlix</title>
+    <style>
+        body {
+            background-color: #121212; /* dark background */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(to right, #ff8c00, #ffa500); /* orange gradient background */
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .header img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #282828; /* dark grey */
+            box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: -20px;
+            z-index: 1;
+            position: relative;
+        }
+        .main-content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #ffa500; /* orange */
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1c1c1c; /* darker grey */
+            padding: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex-wrap: wrap; /* Added to wrap content on smaller screens */
+        }
+        .feature {
+            width: 30%;
+            padding: 10px;
+            background-color: #333; /* dark background */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px; /* Added margin for spacing between rows */
+        }
+        .feature h3 {
+            color: #ffa500; /* orange */
+        }
+        .feature p {
+            color: #bbb; /* light grey */
+        }
+        .feature img {
+            width: 100%;
+            height: 200px; /* Set height for uniform image sizes */
+            object-fit: cover; /* Ensure images cover the area without distortion */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ffa500; /* orange */
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff8c00; /* darker orange */
+        }
+        .footer {
+            background-color: #333;
+            color: #bbb; /* light grey */
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Nani's CineStream</h1>
+                <p>Unlimited Movies, TV Shows, and More</p>
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <h2>Watch Anywhere, Cancel Anytime</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form>
+                <input type="email" placeholder="Email address" style="padding: 10px; border-radius: 3px; border: none; margin-right: 10px;">
+                <button type="submit" class="button">Get Started</button>
+            </form>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="action.jpeg" alt="Action Movies">
+                <h3>Action</h3>
+                <p>Explosive adventures and thrilling action scenes.</p>
+                <a href="#" class="button">Browse Action</a>
+            </div>
+            <div class="feature">
+                <img src="comedy.jpeg" alt="Comedy Movies">
+                <h3>Comedy</h3>
+                <p>Laugh out loud with our collection of comedies.</p>
+                <a href="#" class="button">Browse Comedy</a>
+            </div>
+            <div class="feature">
+                <img src="drama.jpeg" alt="Drama Movies">
+                <h3>Drama</h3>
+                <p>Engaging stories and powerful performances.</p>
+                <a href="#" class="button">Browse Drama</a>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="horror.jpeg" alt="Horror Movies">
+                <h3>Horror</h3>
+                <p>Spine-chilling scares and terrifying moments.</p>
+                <a href="#" class="button">Browse Horror</a>
+            </div>
+            <div class="feature">
+                <img src="love.jpeg" alt="Romance Movies">
+                <h3>Love</h3>
+                <p>Heartwarming stories and romantic adventures.</p>
+                <a href="#" class="button">Browse Romance</a>
+            </div>
+            <div class="feature">
+                <img src="scifi.jpeg" alt="Sci-Fi Movies">
+                <h3>Sci-Fi</h3>
+                <p>Explore new worlds with our sci-fi selection.</p>
+                <a href="#" class="button">Browse Sci-Fi</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 StreamFlix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
